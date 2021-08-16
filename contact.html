@@ -1,8 +1,9 @@
 <! DOCTYPE html>
+<! DOCTYPE html>
 <head>
 				<title>Point Company</title>
-				<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+				<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+				<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 				<style>
 					.sidebar {
     margin: 0;
@@ -71,7 +72,7 @@
 								  border: 2px solid;
 								  border-radius: 1px;
 								  transition: 0.2s;
-							          top: -285;
+							          top: -170;
 							          position: relative;
 								  background: rgba(255,255,255,.2);
 							          width: 200px;
@@ -82,6 +83,11 @@
 				</style>
 </head>
 <body>
+	<script>
+		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+			window.location.href = 'no_support.html';
+  		}
+	</script>
 	<div id="sidebar" class="sidebar">
 			<a href="https://danos2.github.io/pointcompany/">Главная</a>
 			<a class="active" href="https://danos2.github.io/pointcompany/contact.html">Связь с нами</a>
