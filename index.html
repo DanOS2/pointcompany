@@ -80,10 +80,18 @@ background: linear-gradient(90deg, rgba(156,156,255,1) 34%, rgba(51,215,248,1) 1
 				</style>
 </head>
 <body>
-	<div class="sidebar">
+	<div id="sidebar" class="sidebar">
 			<a class="active" href="https://danos2.github.io/pointcompany/">Главная</a>
 			<a href="https://danos2.github.io/pointcompany/contact.html">Связь с нами</a>
 		</div>
+	<button id="sidb">Меню</button>
+	<script>
+		document.getElementById('sidebar').hidden = true;
+		document.getElementById('sideb').onclick = function() {
+			if(document.getElementById('sidebar').hidden) document.getElementById('sidebar').hidden = false;
+			else document.getElementById('sidebar').hidden = true;
+    		}
+	</script>
 	
 				<h1 id="title">Point Company</h1>
 				<hr>
