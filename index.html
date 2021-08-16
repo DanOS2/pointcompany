@@ -82,6 +82,11 @@
 				</style>
 </head>
 <body>
+	<script>
+		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+			window.location.href = 'no_support.html';
+  		}
+	</script>
 	<div id="sidebar" class="sidebar">
 			<a class="active" href="https://danos2.github.io/pointcompany/">Главная</a>
 			<a href="https://danos2.github.io/pointcompany/contact.html">Связь с нами</a>
