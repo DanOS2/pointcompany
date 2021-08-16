@@ -76,7 +76,15 @@ background: linear-gradient(90deg, rgba(156,156,255,1) 34%, rgba(51,215,248,1) 1
 								color: #0f7afc;
 								text-decoration: none;
 								text-align:center;display:block;
-								} 
+								}
+								#sidb {
+									display: inline-block;
+									height: 50px;
+									line-height: 50px;
+									 position: relative;
+									border: 1px solid white;
+									padding: 0 1rem;
+								}
 				</style>
 </head>
 <body>
@@ -88,6 +96,22 @@ background: linear-gradient(90deg, rgba(156,156,255,1) 34%, rgba(51,215,248,1) 1
 				<h1 id="title">Point Company</h1>
 				<hr>
 				<br>
+				<button id="sidb">Открыть меню</button>
+				<script>
+					var sidebar = document.getElementById('sidebar');
+					var sidb = document.getElementById('sidb');
+					sidebar.hidden = true;
+					sidb.onclick = function() {
+						if(sidebar.hidden){
+							sidebar.hidden = false;
+							sidb.innerHTML = "Закрыть меню";
+						}
+						else {
+							sidebar.hidden = true;
+							sidb.innerHTML = "Открыть меню";
+						}
+					}
+				</script>
 				<div id="contact">
 								<h2 id="cnt">Связь с нами</h2>
 								<p id="cnt">Для того чтобы связаться с нами вам необходимо написать нам в социальной сети Вконтакте или в чат менеджере Телеграм.
