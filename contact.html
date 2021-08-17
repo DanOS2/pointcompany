@@ -72,7 +72,7 @@
 								  border: 2px solid;
 								  border-radius: 1px;
 								  transition: 0.2s;
-							          top: -290;
+							          top: 15;
 							          position: relative;
 								  background: rgba(255,255,255,.2);
 							          width: 200px;
@@ -96,6 +96,22 @@
 				<h1 id="title">Point Company</h1>
 				<hr>
 				<br>
+				<button id="sidb">Открыть меню</button>
+				<script>
+					var sidebar = document.getElementById('sidebar');
+					var sidb = document.getElementById('sidb');
+					sidebar.hidden = true;
+					sidb.onclick = function() {
+						if(sidebar.hidden){
+							sidebar.hidden = false;
+							sidb.innerHTML = "Закрыть меню";
+						}
+						else {
+							sidebar.hidden = true;
+							sidb.innerHTML = "Открыть меню";
+						}
+					}
+				</script>
 				<div id="about">
 <h2 id="cnt">Связь с нами</h2>
 <p id="cnt">Для того чтобы связаться с нами вам необходимо написать нам в социальной сети Вконтакте или в чат менеджере Телеграм.
@@ -117,21 +133,5 @@
 <p id="cnt">
 Даниил - @spitfly</p>
 </div>
-				<button id="sidb">Открыть меню</button>
-				<script>
-					var sidebar = document.getElementById('sidebar');
-					var sidb = document.getElementById('sidb');
-					sidebar.hidden = true;
-					sidb.onclick = function() {
-						if(sidebar.hidden){
-							sidebar.hidden = false;
-							sidb.innerHTML = "Закрыть меню";
-						}
-						else {
-							sidebar.hidden = true;
-							sidb.innerHTML = "Открыть меню";
-						}
-					}
-				</script>
 </body>
 </html>
