@@ -60,25 +60,7 @@
 								text-decoration: none;
 								text-align:center;display:block;
 								}
-								#sidb {
-								  display: inline-block;
-								  color: white;
-								  font-weight: 700;
-								  text-decoration: none;
-								  user-select: none;
-								  padding: .5em 2em;
-								  outline: none;
-								  border: 2px solid;
-								  border-radius: 1px;
-								  transition: 0.2s;
-							          top: 15;
-							          position: relative;
-								  background: rgba(255,255,255,.2);
-							          width: 200px;
-								  
-								}
-								#sidb:hover { background: white; }
-								#sidb:active { background: rgba(255,255,255,.2); color: white; }
+					
 				</style>
 </head>
 <body>
@@ -95,22 +77,6 @@
 				<h1 id="title">Point Company</h1>
 				<hr>
 				<br>
-				<button id="sidb">Открыть меню</button>
-				<script>
-					var sidebar = document.getElementById('sidebar');
-					var sidb = document.getElementById('sidb');
-					sidebar.hidden = true;
-					sidb.onclick = function() {
-						if(sidebar.hidden){
-							sidebar.hidden = false;
-							sidb.innerHTML = "Закрыть меню";
-						}
-						else {
-							sidebar.hidden = true;
-							sidb.innerHTML = "Открыть меню";
-						}
-					}
-				</script>
 				<div id="about">
 <h2 id="ab">О нас</h2>
 <p id="ab">Всем привет! Наша компания будет</p>
